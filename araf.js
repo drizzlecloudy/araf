@@ -21,7 +21,7 @@
 	});
 
 	function polyfillRequest(callback, element) {
-		var currTime = new Date.now();
+		var currTime = Date.now();
 		var timeToCall = Math.max(0, 16 - (currTime - lastTime));
 		var id = window.setTimeout(function() { callback(currTime + timeToCall); }, timeToCall);
 		lastTime = currTime + timeToCall;
@@ -32,7 +32,33 @@
 		clearTimeout(id);
 	}
 
-	this.requestAnimationFrame = (!blacklisted && nativeRequest != null) ? nativeRequest : polyfillRequest;
-	this.cancelAnimationFrame  = (!blacklisted && nativeCancel  != null) ? nativeCancel  : polyfillCancel;
+	window.requestAnimationFrame = (!blacklisted && nativeRequest != null) ? nativeRequest : polyfillRequest;
+	window.cancelAnimationFrame  = (!blacklisted && nativeCancel  != null) ? nativeCancel  : polyfillCancel;
+	
+	// drop in replacement for setTimeout
+	// behaves the same as setTimeout, except uses requestAnimationFrame when possible for better performance
+	window.requestTimeout = function(fn, delay) {
+		if(blacklisted === true || nativeRequest == null)
+			return window.setTimeout(fn, delay);
+				
+		var start  = Date.now(),
+			handle = {};
+
+		function loop(){
+			var current	= Date.now(),
+				delta	= current - start;
+				
+			delta >= delay ? fn.call() : handle.value = requestAnimationFrame(loop);
+		};
+		
+		handle.value = requestAnimationFrame(loop);
+		return handle;
+	};
+	
+	// drop in replacement for clearTimeout
+	// behaves the same as clearTimeout, except uses requestAnimationFrame when possible for better performance
+	window.clearRequestTimeout = function(handle) {
+		(!blacklisted && nativeCancel != null) ? window.cancelAnimationFrame(handle.value) : clearTimeout(handle);
+	};
 
 })();
