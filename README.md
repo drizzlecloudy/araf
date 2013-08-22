@@ -10,3 +10,8 @@ My litle project was inspired by :
 * Nicolas Gryman project on https://github.com/ngryman/raf.js
 * Klemen Slavič 'fixing' on https://gist.github.com/KrofDrakula/5318048
 * Joe Lambert 'replacement' on https://gist.github.com/joelambert/1002116
+
+
+====
+
+Licensed under 'public license'
