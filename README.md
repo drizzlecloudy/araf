@@ -3,7 +3,7 @@ Another 'play-safe' requestAnimationFrame
 
 
 Originally by Erik Möller http://my.opera.com/emoller/blog/2011/12/20/requestanimationframe-for-smart-er-animating<br>
-My litle project was inspired by :
+and my litle project was heavily inspired by :
 
 * Paul Irish writing on https://gist.github.com/paulirish/1579671
 * Nicolas Gryman project on https://github.com/ngryman/raf.js
@@ -12,7 +12,7 @@ My litle project was inspired by :
 
 
 ##Usage
-wait..
+Just use it like plain `requestAnimationFrame`
 
 
 ##License
