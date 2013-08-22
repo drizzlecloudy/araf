@@ -1,5 +1,4 @@
-araf
-====
+#araf
 Another 'play-safe' requestAnimationFrame
 
 
@@ -12,12 +11,9 @@ My litle project was inspired by :
 * Joe Lambert 'replacement' on https://gist.github.com/joelambert/1002116
 
 
-Usage
-===
-Just include the script to your page, and do this :<br>
-{i'll do this later, time to sleep}
+##Usage
+Just include the script to your page, and see inspiring links above
 
 
-License
-===
+##License
 Public License
