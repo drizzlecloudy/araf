@@ -1,6 +1,6 @@
 araf
-Another 'play-safe' requestAnimationFrame
 ====
+Another 'play-safe' requestAnimationFrame
 
 
 Originally by Erik Möller http://my.opera.com/emoller/blog/2011/12/20/requestanimationframe-for-smart-er-animating<br>
@@ -15,7 +15,9 @@ My litle project was inspired by :
 ====
 
 
-How to use it?
+<b>Usage</b>
+Just include the script to your page, and do this:
+{i'll do this later, time to sleep}
 
 
 ====
