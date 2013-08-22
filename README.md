@@ -1,7 +1,7 @@
 araf
+Another 'play-safe' requestAnimationFrame
 ====
 
-Another 'play-safe' requestAnimationFrame
 
 Originally by Erik Möller http://my.opera.com/emoller/blog/2011/12/20/requestanimationframe-for-smart-er-animating<br>
 My litle project was inspired by :
@@ -14,4 +14,11 @@ My litle project was inspired by :
 
 ====
 
-Licensed under 'public license'
+
+How to use it?
+
+
+====
+
+
+Licensed under <b>Public License</b>
