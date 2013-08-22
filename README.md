@@ -12,15 +12,12 @@ My litle project was inspired by :
 * Joe Lambert 'replacement' on https://gist.github.com/joelambert/1002116
 
 
-====
-
-
-<b>Usage</b>
-Just include the script to your page, and do this:
+Usage
+===
+Just include the script to your page, and do this :<br>
 {i'll do this later, time to sleep}
 
 
-====
-
-
-Licensed under <b>Public License</b>
+License
+===
+Public License
