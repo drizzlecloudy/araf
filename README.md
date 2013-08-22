@@ -12,7 +12,7 @@ My litle project was inspired by :
 
 
 ##Usage
-Just include the script to your page, and see inspiring links above
+wait..
 
 
 ##License
