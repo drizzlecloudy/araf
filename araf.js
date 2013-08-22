@@ -32,7 +32,7 @@
 		clearTimeout(id);
 	}
 
-	this.requestAnimationFrame	= (!blacklisted && nativeRequest != null) ? nativeRequest : polyfillRequest;
-	this.cancelAnimationFrame	= (!blacklisted && nativeCancel  != null) ? nativeCancel  : polyfillCancel;
+	this.requestAnimationFrame = (!blacklisted && nativeRequest != null) ? nativeRequest : polyfillRequest;
+	this.cancelAnimationFrame  = (!blacklisted && nativeCancel  != null) ? nativeCancel  : polyfillCancel;
 
 })();
