@@ -1,6 +1,9 @@
 #draf
-'play-safe' requestAnimationFrame
-<br>This also safe for iOS 6,7
+<br>Hi, <b>draf</b> is a safe way to play requestAnimationFrame, and might be used to build animation library, or just to build simple gallery. This script provides better replacement for setTimeout, clearTimeout, setInterval, and clearInterval.<br>
+Benefits of using requestAnimationFrame
+- Browser can optimize it, so your animation would be smoother
+- Animation/interval/timeout in inactive tab will stop, it means less CPU, GPU, and memory usage
+- Also means battery friendly
 
 
 Originally by Erik Möller http://my.opera.com/emoller/blog/2011/12/20/requestanimationframe-for-smart-er-animating<br>
