@@ -1,6 +1,6 @@
-#araf
-Another 'play-safe' requestAnimationFrame<br>
-This also safe for iOS 6,7
+#draf
+'play-safe' requestAnimationFrame
+<br>This also safe for iOS 6,7
 
 
 Originally by Erik Möller http://my.opera.com/emoller/blog/2011/12/20/requestanimationframe-for-smart-er-animating<br>
