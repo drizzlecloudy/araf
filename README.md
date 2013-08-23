@@ -12,6 +12,10 @@ and my litle project was heavily inspired by :
 - Joe Lambert 'replacement' on https://gist.github.com/joelambert/1002116
 
 
+##Download
+https://raw.github.com/drizzlecloudy/araf/master/araf.js
+
+
 ##Usage
 Just use this like in pure requestAnimationFrame & cancelAnimationFrame :
 - `requestAnimationFrame`
@@ -37,4 +41,4 @@ Public License
 
 ##Note
 Feel free to contact me on twitter if you find issue/ bug in this script<br>
-<sub>@drizzlecloudy</sub> or <sub>drizzlecloudy {at} gmail.com</sub>
+<sup>@drizzlecloudy <b>or</b> drizzlecloudy {at} gmail.com</sup>
