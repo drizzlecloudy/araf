@@ -13,9 +13,15 @@ and my litle project was heavily inspired by :
 
 
 ##Usage
-Just use it like in pure requestAnimationFrame & cancelAnimationFrame :
+Just use this like in pure requestAnimationFrame & cancelAnimationFrame :
 - `requestAnimationFrame`
 - `cancelAnimationFrame`
+<br>If you want read more about how to use pure requestAnimationFrame, here is very good article :
+<br>http://css-tricks.com/using-requestanimationframe/
+<br>http://creativejs.com/resources/requestanimationframe/
+<br>https://developer.mozilla.org/en-US/docs/Web/API/window.requestAnimationFrame
+<br>http://www.paulirish.com/2011/requestanimationframe-for-smart-animating/
+
 
 <br>
 Also providing the drop-in replacement for `setTimeout, clearTimeout, setInterval, clearInterval`. This will use the `requestAnimationFrame` when possible for better performance. Just use this replacement like their pure way :
