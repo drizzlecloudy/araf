@@ -35,6 +35,7 @@
 	window.requestAnimationFrame = (!blacklisted && nativeRequest != null) ? nativeRequest : polyfillRequest;
 	window.cancelAnimationFrame  = (!blacklisted && nativeCancel  != null) ? nativeCancel  : polyfillCancel;
 	
+	
 	// drop in replacement for setTimeout
 	// behaves the same as setTimeout, except uses requestAnimationFrame when possible for better performance
 	window.requestTimeout = function(fn, delay) {
@@ -59,6 +60,37 @@
 	// behaves the same as clearTimeout, except uses requestAnimationFrame when possible for better performance
 	window.clearRequestTimeout = function(handle) {
 		(!blacklisted && nativeCancel != null) ? window.cancelAnimationFrame(handle.value) : clearTimeout(handle);
+	};
+	
+	
+	// drop in replacement for setInterval
+	// behaves the same as setInterval, except uses requestAnimationFrame when possible for better performance
+	window.requestInterval = function(fn, delay) {
+		if(blacklisted === true || nativeRequest == null)
+				return window.setInterval(fn, delay);
+				
+		var start  = Date.now(),
+			handle = {};
+			
+		function loop() {
+			handle.value = requestAnimationFrame(loop);
+			var current	= Date.now(),
+				delta	= current - start;
+				
+			if(delta >= delay) {
+				fn.call();
+				start = Date.now();
+			}
+		};
+
+		handle.value = requestAnimationFrame(loop);
+		return handle;
+	}
+	
+	// drop in replacement for clearInterval
+	// behaves the same as clearInterval, except uses requestAnimationFrame when possible for better performance
+	window.clearRequestInterval = function(handle) {
+		(!blacklisted && nativeCancel != null) ? window.cancelAnimationFrame(handle.value) : clearInterval(handle);
 	};
 
 })();
