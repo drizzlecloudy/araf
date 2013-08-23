@@ -40,4 +40,4 @@ Public License
 
 ##Note
 Feel free to contact me on twitter if you find issue/ bug in this script<br>
-<sup>@drizzlecloudy <b>or</b> drizzlecloudy {at} gmail.com</sup>
+<sup><a href="https://twitter.com/drizzlecloudy">@drizzlecloudy </a><b>or</b> drizzlecloudy {at} gmail.com</sup>
