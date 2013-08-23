@@ -12,7 +12,7 @@ Originally by Erik Möller http://my.opera.com/emoller/blog/2011/12/20/requestan
 
 
 ##Download
-<a href="https://raw.github.com/drizzlecloudy/araf/master/araf.js">Click this</a>
+<a href="https://raw.github.com/drizzlecloudy/araf/master/draf.js" target="_blank">Click this</a>
 
 
 ##Usage
