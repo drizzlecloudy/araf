@@ -28,11 +28,11 @@
         </ul>
       </header>
       <section>
-        <h1>
-<a name="draf" class="anchor" href="#draf"><span class="octicon octicon-link"></span></a>draf</h1>
+        <h2>
+<a name="description" class="anchor" href="#description"><span class="octicon octicon-link"></span></a>Description</h2>
 
-<p>'play-safe' requestAnimationFrame
-<br>This also safe for iOS 6,7</p>
+<p><b>draf</b> is a safe way to play <code>requestAnimationFrame</code> and <code>cancelAnimationFrame</code>. Might be used to build animation library, or just to build simple gallery.
+<br>This script also provides better replacement for setTimeout, clearTimeout, setInterval, and clearInterval. They are <code>requestTimeout, clearRequestTimeout, requestInterval</code> and <code>clearRequestInterval</code></p>
 
 <p>Originally by Erik Möller <a href="http://my.opera.com/emoller/blog/2011/12/20/requestanimationframe-for-smart-er-animating">http://my.opera.com/emoller/blog/2011/12/20/requestanimationframe-for-smart-er-animating</a><br><b>and</b> my litle script was heavily inspired by :
 <br>Paul Irish writing on <a href="https://gist.github.com/paulirish/1579671">https://gist.github.com/paulirish/1579671</a>
@@ -41,9 +41,18 @@
 <br>Joe Lambert 'replacement' on <a href="https://gist.github.com/joelambert/1002116">https://gist.github.com/joelambert/1002116</a></p>
 
 <h2>
+<a name="benefits" class="anchor" href="#benefits"><span class="octicon octicon-link"></span></a>Benefits</h2>
+
+<p>Benefits of using requestAnimationFrame</p>
+
+<ul>
+<li>Browser can optimize it, so your animation would be smoother</li>
+<li>Animation/interval/timeout in inactive tab will stop, it means less CPU, GPU, and memory usage</li>
+<li>Also means battery friendly</li>
+</ul><h2>
 <a name="download" class="anchor" href="#download"><span class="octicon octicon-link"></span></a>Download</h2>
 
-<p><a href="https://raw.github.com/drizzlecloudy/araf/master/araf.js">Click this</a></p>
+<p><a href="https://raw.github.com/drizzlecloudy/araf/master/draf.js" target="_blank">Click this</a></p>
 
 <h2>
 <a name="usage" class="anchor" href="#usage"><span class="octicon octicon-link"></span></a>Usage</h2>
@@ -54,13 +63,15 @@
 <li><code>requestAnimationFrame</code></li>
 <li>
 <code>cancelAnimationFrame</code>
-<br>If you want read more about how to use pure requestAnimationFrame, here is very good article :
+<br>If you want read more about how to use pure requestAnimationFrame, here is excellent articles :
 <br><a href="http://css-tricks.com/using-requestanimationframe/">http://css-tricks.com/using-requestanimationframe/</a>
 <br><a href="http://creativejs.com/resources/requestanimationframe/">http://creativejs.com/resources/requestanimationframe/</a>
 <br><a href="https://developer.mozilla.org/en-US/docs/Web/API/window.requestAnimationFrame">https://developer.mozilla.org/en-US/docs/Web/API/window.requestAnimationFrame</a>
 <br><a href="http://www.paulirish.com/2011/requestanimationframe-for-smart-animating/">http://www.paulirish.com/2011/requestanimationframe-for-smart-animating/</a>
+<br><a href="http://www.nczonline.net/blog/2011/05/03/better-javascript-animations-with-requestanimationframe/">http://www.nczonline.net/blog/2011/05/03/better-javascript-animations-with-requestanimationframe/</a>
 </li>
-</ul><p><br>Also providing the drop-in replacement for <code>setTimeout, clearTimeout, setInterval, clearInterval</code>. This will use the <code>requestAnimationFrame</code> when possible for better performance. Just use this replacement like their pure way :</p>
+</ul><p><br>
+Also providing the drop-in replacement for <code>setTimeout, clearTimeout, setInterval, clearInterval</code>. This will use the <code>requestAnimationFrame</code> when possible for better performance. Just use this replacement like their pure way :</p>
 
 <ul>
 <li><code>requestTimeout</code></li>
@@ -75,7 +86,7 @@
 <h2>
 <a name="note" class="anchor" href="#note"><span class="octicon octicon-link"></span></a>Note</h2>
 
-<p>Feel free to contact me on twitter if you find issue/ bug in this script<br><sup><a href="https://github.com/drizzlecloudy" class="user-mention">@drizzlecloudy</a> <b>or</b> drizzlecloudy {at} gmail.com</sup></p>
+<p>Feel free to contact me on twitter if you find issue/ bug in this script<br><sup><a href="https://twitter.com/drizzlecloudy">@drizzlecloudy </a><b>or</b> drizzlecloudy {at} gmail.com</sup></p>
       </section>
       <footer>
         <p>This project is maintained by <a href="https://github.com/drizzlecloudy">drizzlecloudy</a></p>
