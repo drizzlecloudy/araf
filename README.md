@@ -1,5 +1,5 @@
-#draf
-<br>Hi, <b>draf</b> is a safe way to play requestAnimationFrame, and might be used to build animation library, or just to build simple gallery. This script provides better replacement for setTimeout, clearTimeout, setInterval, and clearInterval.<br>
+##Description
+<b>draf</b> is a safe way to play requestAnimationFrame, and might be used to build animation library, or just to build simple gallery. This script provides better replacement for setTimeout, clearTimeout, setInterval, and clearInterval.<br>
 Benefits of using requestAnimationFrame
 - Browser can optimize it, so your animation would be smoother
 - Animation/interval/timeout in inactive tab will stop, it means less CPU, GPU, and memory usage
