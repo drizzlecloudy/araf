@@ -1,14 +1,18 @@
 ##Description
-<b>draf</b> is a safe way to play `requestAnimationFrame` and `cancelAnimationFrame`. Might be used to build animation library, or just to build simple gallery.
-<br>This script also provides better replacement for setTimeout, clearTimeout, setInterval, and clearInterval. They are `requestTimeout, clearRequestTimeout, requestInterval` and `clearRequestInterval`
+<b>draf</b> is a safe way to play `requestAnimationFrame` and `cancelAnimationFrame`. Might be used to build animation library, or just to build simple gallery. This script also provides better replacement for setTimeout, clearTimeout, setInterval, and clearInterval. They are `requestTimeout, clearRequestTimeout, requestInterval` and `clearRequestInterval`
 
 
-Originally by Erik Möller http://my.opera.com/emoller/blog/2011/12/20/requestanimationframe-for-smart-er-animating<br>
-<b>and</b> my litle script was heavily inspired by :
-<br>Paul Irish writing on https://gist.github.com/paulirish/1579671
-<br>Nicolas Gryman project on https://github.com/ngryman/raf.js
-<br>Klemen Slavič 'fixing' on https://gist.github.com/KrofDrakula/5318048
-<br>Joe Lambert 'replacement' on https://gist.github.com/joelambert/1002116
+<br>To be clear, this script is copy & mixing of:
+- https://gist.github.com/KrofDrakula/5318048
+- https://gist.github.com/joelambert/1002116
+
+
+And say thanks very much to:
+- Erik Möller http://my.opera.com/emoller/blog/2011/12/20/requestanimationframe-for-smart-er-animating
+- Paul Irish https://gist.github.com/paulirish/1579671
+- Nicolas Gryman https://github.com/ngryman/raf.js
+- Klemen Slavič https://gist.github.com/KrofDrakula/5318048
+- Joe Lambert https://gist.github.com/joelambert/1002116
 
 
 ##Benefits
