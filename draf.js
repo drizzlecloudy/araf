@@ -4,6 +4,8 @@
  *
  *  draf.js
  *  'play-safe' requestAnimationFrame (also safe for iOS)
+ *
+ *  Public License
  */
 (function() {
 
